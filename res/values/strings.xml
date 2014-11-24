@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">365 Shades of Happiness</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="white">#ffffff</color>
+    <color name="happy">#f5ab00</color>
+    <color name="black">#000000</color>
+
+    <string name="string1">Main Menu</string>
+    <string name="flowerIconContentDescription">Flower</string>
+    <string name="title_activity_quotes">Quotes</string>
+    <string name="title_activity_donate">Donate</string>
+    <string name="title_activity_ppes">PPEs</string>
+    <string name="title_activity_comedy">Comedy</string>
+    <string name="title_activity_gdf">Good deed feed</string>
+    <string name="title_activity_taol">The Art of Living</string>
+    <string name="title_activity_mc">Magazine corner</string>
+    <string name="title_activity_oac">Open a company</string>
+    <string name="title_activity_info_on_ege">Info</string>
+    <string name="string2">Search events</string>
+    <string name="string3">Search groups</string>
+    <string name="string4">Search forums</string>
+    <string name="title_activity_meditation_zone">Meditation zone</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_lc">Laughing club</string>
+    <string name="facebook_app_id">320038021516020</string>
+    <string name="title_activity_happy_diary">Happy Diary</string>
+
+</resources>
