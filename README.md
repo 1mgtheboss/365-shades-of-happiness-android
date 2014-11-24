@@ -1,4 +1,4 @@
 365-shades-of-happiness-android
 ===============================
 
-365 Shades of Happiness
+© 2014 Manojit Ghosh
