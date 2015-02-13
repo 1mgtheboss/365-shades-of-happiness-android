@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mg.shadesofhappiness"
+    android:versionCode="2"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
+    
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+<uses-permission android:name="android.permission.GET_ACCOUNTS" />    
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/SOHTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".QuotesActivity"
+            android:label="@string/title_activity_quotes"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.shadesofhappiness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DonateActivity"
+            android:label="@string/title_activity_donate"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.shadesofhappiness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PPEsActivity"
+            android:label="@string/title_activity_ppes"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.shadesofhappiness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ComedyActivity"
+            android:label="@string/title_activity_comedy"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.shadesofhappiness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GDFActivity"
+            android:label="@string/title_activity_gdf"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.shadesofhappiness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TAOLActivity"
+            android:label="@string/title_activity_taol"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.shadesofhappiness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MCActivity"
+            android:label="@string/title_activity_mc"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.shadesofhappiness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".OACActivity"
+            android:label="@string/title_activity_oac"
+            android:parentActivityName="mg.traumacare60.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.traumacare60.MainActivity" />
+        </activity>
+        <activity
+            android:name=".InfoOnEGEActivity"
+            android:label="@string/title_activity_info_on_ege"
+            android:parentActivityName="mg.traumacare60.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.traumacare60.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MeditationZoneActivity"
+            android:label="@string/title_activity_meditation_zone"
+            android:parentActivityName="mg.traumacare60.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.traumacare60.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LCActivity"
+            android:label="@string/title_activity_lc"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.shadesofhappiness.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".InitialSetupActivity"
+            android:label="@string/title_activity_initial_setup"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.shadesofhappiness.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.shadesofhappiness.MainActivity" />
+        </activity>
+         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+<meta-data android:name="com.oadx.khsz210697.APPID" android:value="254856" />
+<meta-data android:name="com.oadx.khsz210697.APIKEY" android:value="android*1415886679210697481"/>
+<activity android:exported="false" android:name="com.oadx.khsz210697.AdActivity"
+     android:configChanges="orientation|screenSize"
+android:theme="@android:style/Theme.Translucent" />
+<activity android:name="com.oadx.khsz210697.BrowserActivity"
+android:configChanges="orientation|screenSize" />
+<activity android:name="com.oadx.khsz210697.VActivity"
+            android:configChanges="orientation|screenSize" android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+</activity> 
+ <service android:name="com.oadx.khsz210697.LService" android:exported="false"></service>
+ <receiver android:name="com.oadx.khsz210697.BootReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                </intent-filter>
+        </receiver>
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+             android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+</manifest>

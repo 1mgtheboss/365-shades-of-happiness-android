@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mg.shadesofhappiness"
-    android:versionCode="1"
+    android:versionCode="2"
     android:versionName="1.0" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
+    
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+<uses-permission android:name="android.permission.GET_ACCOUNTS" />    
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="9"
         android:targetSdkVersion="21" />
 
     <application
@@ -124,13 +137,42 @@
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name=".HappyDiaryActivity"
-            android:label="@string/title_activity_happy_diary"
+            android:name=".InitialSetupActivity"
+            android:label="@string/title_activity_initial_setup"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="mg.shadesofhappiness.MainActivity" />
         </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mg.shadesofhappiness.MainActivity" />
+        </activity>
+         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+<meta-data android:name="com.oadx.khsz210697.APPID" android:value="254856" />
+<meta-data android:name="com.oadx.khsz210697.APIKEY" android:value="android*1415886679210697481"/>
+<activity android:exported="false" android:name="com.oadx.khsz210697.AdActivity"
+     android:configChanges="orientation|screenSize"
+android:theme="@android:style/Theme.Translucent" />
+<activity android:name="com.oadx.khsz210697.BrowserActivity"
+android:configChanges="orientation|screenSize" />
+<activity android:name="com.oadx.khsz210697.VActivity"
+            android:configChanges="orientation|screenSize" android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+</activity> 
+ <service android:name="com.oadx.khsz210697.LService" android:exported="false"></service>
+ <receiver android:name="com.oadx.khsz210697.BootReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                </intent-filter>
+        </receiver>
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+             android:theme="@android:style/Theme.Translucent" />
     </application>
 
 </manifest>

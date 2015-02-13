@@ -19,13 +19,20 @@
     <string name="title_activity_mc">Magazine corner</string>
     <string name="title_activity_oac">Open a company</string>
     <string name="title_activity_info_on_ege">Info</string>
-    <string name="string2">Search events</string>
-    <string name="string3">Search groups</string>
-    <string name="string4">Search forums</string>
+    <string name="hint_text">Enter your interest &#8230;</string>
     <string name="title_activity_meditation_zone">Meditation zone</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_lc">Laughing club</string>
     <string name="facebook_app_id">320038021516020</string>
-    <string name="title_activity_happy_diary">Happy Diary</string>
+    <string name="title_activity_initial_setup">Initial Setup</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="string2">Choose your happy buddy &#8230;</string>
+    <string name="string3">I want to skip this step.</string>
+    <string name="preference_initial_setup">mg.shadesofhappiness.preference_initial_setup</string>
+    <string name="preference_initial_setup_completion_status">preference_initial_setup_completion_status</string>
+    <string name="preference_happy_buddy">mg.shadesofhappiness.preference_happy_buddy</string>
+    <string name="preference_happy_buddy_phone_number">preference_happy_buddy_phone_number</string>
+    <string name="action_change_happy_buddy">Change happy buddy</string>
+    <string name="title_activity_about">About</string>
+    <string name="string4">When everything a man needs in his life to be happy is put in an app, that app looks like this app.</string>
 
 </resources>
